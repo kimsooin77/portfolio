@@ -1,0 +1,991 @@
+@charset 'utf-8';
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Noto+Sans+KR:wght@100&family=Raleway:wght@100&family=Scheherazade+New:wght@700&family=Work+Sans:wght@100&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;   
+    overflow-x: hidden;
+}
+ul,li,ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+/* header -----------------------------------------------------*/
+header {
+    width: 100%;
+    height: 870px;
+}
+header .inner {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+header .inner h1 img {
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    top: 25%;
+}
+ 
+header .inner .sideMenu {
+    position: absolute;
+    width: 31.4%;
+    height: 886px;
+    padding: 65px;
+    top: -133px;
+    left: 0;
+    box-sizing: border-box;
+    background: #000;
+}
+header .inner .sideMenu #floorInfo {
+    top: 60%;
+    text-align: left;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+header .inner .sideMenu #floorInfo li{
+    margin-bottom: 25px;
+}
+header .inner .sideMenu #floorInfo li a {
+    font-size: 14px;
+    color: #FFFFFFB3;
+    font-family: "Heebo";
+}
+header #mainMenu {
+    display: block;
+    margin: 0 auto;
+    text-align: left;
+    position: absolute;
+    top: 40px;
+    left: 25%;
+    box-sizing: border-box;
+    padding: 45px;
+}
+header #mainMenu li {
+    float: left;
+    margin-right: 40px;
+}
+header #mainMenu li a {
+    font: 20px bold "Heebo";
+    color: #000;
+    font-weight: 600;
+}
+header #mainMenu li .first {
+    color: coral;
+}
+header #icons::after {
+    display: inline-block;
+    content: "";
+    clear: both;
+}
+header #icons {
+    position: absolute;
+    top: 40px;
+    right: 2%;
+    display: block;
+    box-sizing: border-box;
+    padding: 45px;
+}
+header #icons li {
+    float: left;
+    margin-right: 30px;
+}
+header #icons li a{
+    font-size: 23px;
+    color: #000;
+}
+header #icons li:nth-of-type(5) a{
+    font-size: 16px;
+}
+/* figure-------------------------------------------------- */
+figure {
+    background: url(./img/main_img2.jpg) no-repeat center/cover;
+    width: 1200px;
+    height: 566px;
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    z-index: 3;
+}
+figure .inner {
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+    width: 400px;
+    
+}
+figure .inner #view {
+    width: 100%;
+}
+
+figure .inner #view li {
+    float: left;
+    width: 49%;
+}
+figure .inner #view li a::after {
+    display: block;
+    content: "";
+    width: 30px;
+    height: 3px;
+    color: #fff;
+}
+figure .inner #view li:nth-of-type(1),
+figure .inner #view li:nth-of-type(3) {
+    margin-right: 2%;
+    margin-bottom: 20px;
+}
+figure .inner #view li:nth-of-type(2),
+figure .inner #view li:nth-of-type(4) {
+    margin-right: 0;
+}
+figure .inner #view li a {
+    font-size: 18px;
+    font: bold "Noto Sans KR" ; 
+    color: orange;
+    font-weight: 600;
+    padding-left: 10px;
+}
+figure .inner #view li a i {
+    margin-left: 90px;
+}
+/* floor ----------------------------------------------------*/
+#floor {
+    width: 100%;
+    height: 950px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+#floor .inner p {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Heebo";
+}
+#floor .inner h1 {
+    font-size: 50px;
+    color: #222;
+    font-weight: 300;
+    letter-spacing: -1.5px;
+    font-family: 'Noto Sans KR';
+}
+#floor .inner article {
+    margin-top: 70px;
+    position: relative;
+}
+#floor .inner article .pic img{
+    width: 600px;
+    height: 700px;
+}
+#floor .inner article .pic .text {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    text-align: left;
+    overflow: hidden;
+}
+
+#floor .inner article .pic .text h2{
+    font-size: 45px;
+    font-family: "Heebo";
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+#floor .inner article .pic .text p {
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: "Noto Sans KR";
+    margin-bottom: 180px;
+}
+#floor .inner article .pic .text a {
+    text-align: left;
+    border-bottom: 3px solid #000;
+}
+#floor .inner article .pic .text a i {
+    margin-left: 80px;
+}
+/* service------------------------------------------------------ */
+#service {
+    width: 100%;
+    margin: 0 auto;
+}
+#service .inner{
+    margin: 0 50px 0 50px;
+
+}
+#service .inner .main_top {
+    margin-bottom: 50px;
+}
+#service .inner .main_top h1 {
+    display: inline-block;
+    font-size: 50px;
+    font-weight: 300;
+    margin-right: 86px;
+    color: #222;
+}
+#service .inner .main_top p {
+    display: inline-block;
+    font-size: 17px;
+    color: #888;
+    margin-top: -5px;
+    font-family: "Heebo";
+}
+
+#service .inner .wrap {
+    z-index: 1;
+    
+}
+#service .inner .wrap .content {
+    display: inline-block;
+    width: 33%;
+    height: 409px;
+    padding: 40px 50px;
+    vertical-align: middle;
+    background: #fff;
+    border: 1px solid #ededed;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#service .inner .wrap .content .pic img {
+    width: 150px;
+    height: 150px;
+}
+#service .inner .wrap .content span {
+    font-size: 22px;
+    font-family: "Heebo";
+    margin: 40px 0px 45px;
+    color: #252525;
+    text-align: left;
+    line-height: 1.6;
+    letter-spacing: -1.2px;
+    box-sizing: border-box;
+    display: block;
+}
+#service .inner .wrap .content a {
+    display: inline-block;
+    width: 190px;
+    font-weight: 500;
+    font-family: "Heebo";
+    font-size: 16px;
+    text-align: left;
+    color: #000;
+    border-bottom: 3px solid #000;
+}
+#service .inner .wrap .content a i {
+    margin-left: 80px;
+}
+/* recommend----------------------------------------------------- */
+#recommend {
+    height: 800px;
+    margin: 180px 0 0 0;
+    position: relative;
+}
+#recommend .recommend_bg{
+    position: absolute;
+    width: 74%;
+    height: 1300px;
+    left: 0;
+    bottom: 0;
+    background: #88878638;
+    z-index: -1;
+}
+#recommend .inner {
+    margin: 0 50px 0 50px;
+    z-index: 4;
+}
+#recommend .inner p {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Heebo";
+    color: #000;
+    line-height: 1.6;
+    letter-spacing: -0.5px;
+    box-sizing: border-box;
+}
+#recommend .inner h1 {
+    font-size: 50px;
+    color: #222;
+    font-weight: 300;
+    letter-spacing: -1.5px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+#recommend .inner .btns li {
+    display: inline-block;
+    vertical-align: top;
+    width: 200px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    margin-right: 10px;
+    transition: all .5s ease;
+    border: 1px solid #9c9c9c;
+    font-size: 17px;
+    font-weight: 500;
+    color: #1f2020;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+#recommend .inner .wrap {
+    width: 150%;
+    overflow-x: hidden;
+    z-index: 5;
+}
+#recommend .inner .wrap li{
+    float: left;
+    position: relative;
+    margin-right: 15px;
+    
+}
+#recommend .inner .wrap li img {
+    width: 380px;
+    height: 360px;
+}
+#recommend .inner .wrap li div {
+    position: relative;
+    width: 100%;
+    height: 120px;
+    padding: 30px 35px;
+    background: #fff;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+#recommend .inner .wrap li div strong {
+    text-align: left;
+    font-size: 20px;
+    color: #000;
+    line-height: 1.6;
+    letter-spacing: -0.5px;
+}
+#recommend .inner .wrap li a {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    z-index: 10;
+    color: #000;
+}
+#recommend .inner .wrap li a span {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+    margin-left: 10px;
+}
+#recommend .inner .wrap li button {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    background: #000;
+    z-index: 11;
+    color: #fff;
+    box-sizing: border-box;
+    cursor: pointer;
+    
+}
+#recommend .inner .wrap li button i {
+    font-size: 21px;
+    line-height: 1.5;
+}
+/* search ---------------------------------------------------------*/
+#search {
+    width: 100%;
+    height: 443px;
+    padding: 100px 50px;
+    background: url(/img/search_bg.png)repeat-x center center;
+    background-size: cover;
+    box-sizing: border-box;
+    z-index: 100;
+    opacity: 0.8;
+    overflow: hidden;
+}
+#search .inner {
+    text-align: center;
+    width: 100%;
+}
+#search .inner p {
+    font-family: "Heebo";
+    line-height: 1.6;
+    letter-spacing: -0.5px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+#search .inner h1 {
+    font-size: 50px;
+    color: #111;
+    font-weight: 300;
+    letter-spacing: -1.5px;
+}
+#search .inner span {
+    line-height: 1.6;
+    font-size: 17px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    display: block;
+    color: #000;
+}
+#search .inner .wrap p {
+    display: inline-block;
+    vertical-align: middle;
+    width: 16%;
+    height: 79px;
+    margin-right: 0.5%;
+    background: #000;
+    box-sizing: border-box;
+    cursor: pointer;
+    padding: 32px 15px;
+    font-size: 15px;
+    font-weight: 300;
+    color: #fff;
+    line-height: 1;
+    overflow: hidden;
+    
+}
+#search .inner .wrap i {
+    margin-left: 100px;
+}
+#search .inner .wrap button {
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    width: 150px;
+    height: 78px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+    border: 1px solid #000;
+    background: #000;
+    cursor: pointer;
+    line-height: 78px;
+}
+#search .inner .wrap button img {
+    margin: 3px 0 0 7px;
+    max-width: 100%;
+    border: none;
+}
+/* paper------------------------------------------------------ */
+#paper {
+    position: relative;
+    padding: 100px 0 0 ;
+    text-align: center;
+}
+#paper .inner h1 {
+    font-size: 50px;
+    color: #222;
+    font-weight: 200;
+    letter-spacing: -1.5px;
+    line-height: 1.6;
+    font-family: "Heebo";
+    margin-bottom: 18px;
+}
+#paper .inner>p {
+    font-size: 17px;
+    color: #888;
+    letter-spacing: -0.8px;
+    font-family: "Heebo";
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+#paper .inner .keyword {
+    margin-bottom: 50px;
+}
+
+#paper .inner .keyword>p {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 18px;
+    color: #818181;
+    margin-right: 15px;
+    line-height: 1.6;
+}
+#paper .inner .keyword ul {
+    display: inline-block;
+}
+#paper .inner .keyword ul li {
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 18px;
+    background: #f4f4f4;
+    min-width: 115px;
+    height: 37px;
+    line-height: 37px;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0 2px;
+    box-sizing: border-box;
+    cursor: pointer;
+    overflow: hidden;
+}
+#paper .inner .keyword ul li:last-child{
+    background: #fff;
+    border: 1px solid rgba(0,0,0,0.4);
+    padding: 0 17px;
+}
+#paper .inner .paerMenu {
+    width: 80%;
+    padding: 0 159px 0px;
+    margin: 0 auto;
+}
+#paper .inner .paerMenu li {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    width: 11%;
+    height: 57px;
+    margin-right: -1px;
+    background: #fff;
+    border: 1px solid #d5d5d5;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+#paper .inner .paerMenu li a {
+    font-size: 17px;
+    color: #1f2020;
+    font-weight: 550;
+    line-height: 57px;
+    vertical-align: middle;
+}
+#paper .inner .photos {
+    width: 100%;
+    background: #f3f3f3;
+    box-sizing: border-box;
+    padding: 50px 50px;
+    margin-top: -3px;
+}
+#paper .inner .photos article {
+    position: relative;
+    width: 24%;
+    margin-right: 0.666%;
+    padding-bottom: 0;
+    margin-bottom: 60px;
+    display: inline-block;
+    vertical-align: top;
+}
+#paper .inner .photos article img {
+    width: 100%;
+    height: 270px;
+}
+
+#paper .inner .photos article .wrap a {
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    z-index: 10;
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+    z-index: 11;
+}
+#paper .inner .photos article .wrap a strong {
+    margin-left: 9px;
+    font-size: 20px;
+}
+#paper .inner .photos article .wrap button {
+    overflow: hidden;
+    position: absolute;
+    bottom: 32%;
+    right: 15px;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    background: #000;
+    z-index: 11;
+    color: #fff;
+    box-sizing: border-box;
+    cursor: pointer;
+    outline: none;
+}
+#paper .inner .photos article .wrap button i {
+    font-size: 21px;
+    line-height: 45px;
+}
+#paper .inner .photos article .wrap>p {
+    padding: 20px 20px;
+    text-align: left;
+    font-size: 20px;
+    color: #101825;
+    background: #fff;
+    font-weight: 500;
+    letter-spacing: -1.8px;
+    min-height: 55px;
+    line-height: 1.6;
+}
+
+#paper .inner .photos .moreBtn {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 310px;
+    height: 66px;
+    line-height: 62px;
+    font-size: 16px;
+    font-weight: 700;
+    border: 2px solid #000;
+    text-align: center;
+    transition: all 0.5s;
+    z-index: 10;
+    box-sizing: border-box;
+}
+
+/* snsStrory------------------------------------------------- */
+#snsStrory {
+    padding: 100px 150px 150px;
+    position: relative;
+    text-align: center;
+}
+#snsStrory .inner p {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.6;
+    letter-spacing: -0.5px;
+}
+#snsStrory .inner h1 {
+    font-size: 50px;
+    color: #222;
+    font-weight: 300;
+    letter-spacing: -1.5px;
+}
+#snsStrory .inner ul {
+    margin-bottom: 45px;
+    color: #000;
+    line-height: 1.6;
+    letter-spacing: -0.5px;
+    box-sizing: border-box;
+    font-family: "Heebo";
+}
+#snsStrory .inner ul li {
+    position: relative;
+    display: inline-block;
+    width: 220px;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #acacac;
+    font-weight: 700;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+#snsStrory .inner ul li::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    background: #1d1612;
+    opacity: 0.1;
+}
+
+/* info---------------------------------------------------- */
+#info {
+    position: relative;
+    padding: 0 0 200px 70px;
+    overflow: hidden;
+}
+#info .inner p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #000;
+    line-height: 1.6;
+    font-family: "Heebo";
+}
+#info .inner h1 {
+    font-size: 52px;
+    line-height: 1.2;
+    margin-bottom: 40px;
+    color: #222;
+    font-weight: 300;
+    letter-spacing: -1.5px;
+    font-family: 'Noto Sans KR';
+    overflow: hidden;
+}
+#info .inner span {
+    display: block;
+    font-size: 17px;
+    color: #4e4e4e;
+    letter-spacing: -1px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    font-family: 'Noto Sans KR';
+}
+
+#info .inner strong {
+    display: block;
+    color: #000;
+    margin-top: 15px;
+    font-family:'Heebo';
+    font-weight: bold;
+    line-height: 1.6;
+    letter-spacing: inherit;
+}
+#info .pic {
+    background: url(img/bell.jpg) no-repeat center/cover;
+    position: absolute;
+    top: 0;
+    right: 5%;
+    width: 934px;
+    height: 545px;
+    overflow: hidden;
+    cursor: pointer;
+}
+#info .notice {
+    position: absolute;
+    width: 892px;
+    height: 303px;
+    display: block;
+    left: -109px;
+    bottom: -140px;
+    background: linear-gradient(to right, #555, transparent);
+    box-shadow: -19.1px 12.9px 20px 5px rgb(0 0 0 / 2%);
+    box-sizing: border-box;
+    margin-bottom: 100px;
+}
+#info .notice span {
+    position: absolute;
+    font-size: 20px;
+    color: #acacac;
+    letter-spacing: -1px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transition: all 0.5s;
+    color: #010101;
+    font-weight: 500;
+}
+/* footer--------------------------------------------------- */
+footer {
+    padding: 50px 110px 25px;
+    overflow: hidden;
+    position: relative;
+    background: #000;
+    color: #fff;
+}
+footer .inner .footer_mainMenu {
+    float: left;
+}
+footer .inner .footer_mainMenu li{
+    display: inline-block;
+    margin-right: 20px;
+}
+footer .inner .footer_mainMenu li a {
+    font-size: 15px;
+    color: #f4f4f4;
+    font-family: 'Noto Sans KR';
+}
+footer .inner .footer_subMenu {
+    float: right;
+}
+
+footer .inner .footer_subMenu li {
+    display: inline-block;
+    margin-right: 20px;
+}
+footer .inner .footer_subMenu li a {
+    color: #f4f4f4;
+    font-family: 'Noto Sans KR';
+}
+footer .inner .pic {
+    margin: 103px 0 103px -325px;
+    
+    display: inline-block;
+}
+footer .inner .pic>img {
+    width: 155px;
+    height: 55px;
+}
+footer .inner .topBtns {
+    position: absolute;
+    overflow: hidden;
+    width: 51px;
+    height: 51px;
+    top: 130px;
+    right: 130px;
+    padding: 14px 0;
+    box-sizing: border-box;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
+footer .inner .topBtns img {
+    opacity: 0.5;
+}
+
+footer .footerLeft {
+    width: 48%;
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+}
+footer .footerLeft p {
+    display: inline-block;
+    width: 23%;
+    vertical-align: top;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 300;
+}
+footer .footerLeft span {
+    display: inline-block;
+    vertical-align: top;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 300;
+    font-family: 'Noto Sans KR';
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+footer .footerLeft>a {
+    display: block;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 700;
+    width: 230px;
+    padding-bottom: 7px;
+    border-bottom: 3px solid #fff;
+    background: url(/img/btn_hover.png)no-repeat right 8px;
+    margin-top: 20px;
+}
+footer .footerRight {
+    width: 48%;
+    vertical-align: top;
+    display: inline-block;
+    padding-left: 40px;
+}
+footer .footerRight span {
+    vertical-align: top;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 300;
+    font-family: 'Noto Sans KR';
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+footer .footerRight .btns {
+    margin: 30px 0 45px;
+}
+footer .footerRight .btns div {
+    display: inline-block;
+    vertical-align: middle;
+    background: #1f1f1f ;
+    position: relative;
+    width: 52%;
+    height: 73px;
+    margin-right: 70px;
+    line-height: 73px;
+    padding: 30px 30px;
+    box-sizing: border-box;
+    cursor: pointer;
+    overflow: hidden;
+}
+footer .footerRight .btns div p {
+    overflow: hidden;
+    font-size: 15px;
+    color: #f4f4f4;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 1;
+}
+footer .footerRight .btns div p i {
+    margin-left: 150px;
+}
+footer .footerRight .btns a i{
+    color: #fff;
+    font-size: 20px;
+    margin-left: 30px;
+}
+footer .footerRight>a {
+    display: block;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 700;
+    width: 230px;
+    padding-bottom: 7px;
+    border-bottom: 3px solid #fff;
+    background: url(/img/btn_hover.png)no-repeat right 8px;
+    margin-top: 20px;
+}
+footer .footerBottom {
+    font-size: 15px;
+    color: rgba(244, 244, 244, 0.63);
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-family: "Noto Sans KR";
+    margin: 100px 0 20px 0;
+}
+
+@media screen and (max-width:1179px){
+    /* header -----------------------------------------*/
+    
+    header .inner .sideMenu {
+        height: 800px;
+    }
+    
+    header #mainMenu {
+        left: 30%;
+    }
+    header #icons {
+        display: none;
+    }
+    /* figure------------------------------------------- */
+    figure {
+        width: 1000px;
+        height: 480px;
+        top: 25%;
+        left: 26%;
+    }
+    figure .inner #view li a {
+        font-size: 16px;
+    }
+    /* floor-------------------------------------------------- */
+    
+    #floor .inner article {
+        margin-top: 70px;
+        position: relative;
+    }
+    #floor .inner article .pic img{
+        width: 500px;
+        height: 600px;
+        float: right;
+        margin-right: 100px;
+    }
+    /* service------------------------------------------------ */
+    #service .inner .wrap .content {
+        width: 30%;
+        height: 430px;
+    }
+    
+    #service .inner .wrap .content span {
+        margin: 40px 0px 25px;
+    }
+    /* recommend--------------------------------------------- */
+    #recommend {
+        overflow: hidden;
+    }
+    #recommend .recommend_bg{
+        position: absolute;
+        width: 74%;
+        height: 1300px;
+        left: 0;
+        top: -30%;
+        background: #88878638;
+        z-index: -1;
+    }
+    
+}
