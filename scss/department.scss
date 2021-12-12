@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Libre+Baskerville&family=Montserrat:wght@700&family=Noto+Sans+KR:wght@100&family=Raleway:wght@100&family=Scheherazade+New:wght@700&family=Work+Sans:wght@100&display=swap');
+
+#visual {
+    
+
+    p {
+        width: 65%;
+        font-size: 5em;
+        color: #e8e5e0;
+        text-align: center;
+        margin: 200px auto;
+        font-family: "Libre Baskerville";
+    }
+}
+#speakers {
+    width: 1180px;
+    margin: 0 auto;
+
+    .inner {
+        width: 100%;
+        height: 450px;
+        margin: 0 auto;
+        position: relative;
+        
+        .info {
+            display: inline-block;
+            position: absolute;
+            top: 40%;
+            left: 0;
+            transform: translateY(-50%);
+            text-align: left;
+
+            h2 {
+                font-family: "Montserrat";
+                font-size: 55px;
+                font-weight: 2000;
+
+                span {
+                    color: coral;
+                    margin-left: 10px;
+                }
+            }
+            .line {
+                width: 122px;
+                height: 3px;
+                background-color: #356BF8;
+                margin-top: 22px;
+            }
+            p {
+                font-family: "sans-serif";
+                font-size: 18px;
+                line-height: 30px;
+                font-weight: 500;
+                color: #868686;
+                font-weight: 100;
+                margin-top: 23px;
+            }
+        }
+        .mainPic {
+            width: 550px;
+            height: 450px;
+            display: inline-block;
+            position: absolute;
+            right: 0;
+            top: 0;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+#people {
+    width: 100%;
+    margin: 0 auto;
+
+    .inner {
+        width: 1180px;
+        margin: 0 auto;
+
+        .wrap {
+            position: relative;
+            height: 4000px;
+
+            article {
+                display: inline-block;
+                width: 50%;
+                height: 680px;
+                padding: 0 15px;
+                position: relative;
+                transition: 0.5s;
+
+                .icons::after{
+                    display: block;
+                    content: "";
+                    clear: both;
+                }
+                .icons {
+                    float: left;
+                    width: 22px;
+                    height: 290px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    position: absolute;
+                    top: 23%;
+                    left: 15%;
+                    
+
+                    li a {
+                        color: #000;
+                        font-size: 18px;
+                    }
+                }
+                .pic {
+                    width: 450px;
+                    height: 550px;
+                    overflow: hidden;
+                    float: right;
+                    margin-bottom: 30px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        
+                    }
+                }
+            
+                .text {
+                    display: block;
+                    width: 100%;
+                    position: absolute;
+                    bottom: 0%;
+                    left: 25%;
+
+                    h2 {
+                        overflow: hidden;
+                        font-size: 24px;
+                        font-family: "Montserrat";
+                        line-height: 26px;
+                        letter-spacing: 1.2px;
+                    }
+                    p {
+                        margin: 4px 0 26px;
+                        font-family: "Libre Baskerville",serif;
+                        font-size: 13px;
+                        font-style: italic;
+                        color: #868686;
+                        font-weight: 300;
+                        line-height: 26px;
+                        
+                    }
+                    a {
+                        font-size: 12px;
+                        font-family: "Montserrat";
+                        color: #000;
+                        letter-spacing: 2px;
+                    }
+                }
+
+                &:nth-of-type(1) {
+                    position: absolute;
+                    top: 0;
+                    left: -4%;
+                }
+                &:nth-of-type(2) {
+                    position: absolute;
+                    top: 150px;
+                    right: -4%;
+                }
+                &:nth-of-type(3) {
+                    position: absolute;
+                    top: 23%;
+                    left: -5%;
+                }
+                &:nth-of-type(4) {
+                    position: absolute;
+                    top: 30%;
+                    right: 0%;
+                }
+                &:nth-of-type(5) {
+                    position: absolute;
+                    left: -12%;
+                    top: 48%;
+                }
+                &:nth-of-type(6) {
+                    position: absolute;
+                    top: 55%;
+                    right: 8%;
+                }
+                &:nth-of-type(7) {
+                    position: absolute;
+                    bottom: 10%;
+                    left: -5%;
+                }
+                &:nth-of-type(8) {
+                    position: absolute;
+                    bottom: 150px;
+                    right: 0;
+                }
+
+            }
+
+        }
+    }
+}
+
+/*tablet -------------------------------------------*/
+@media screen and (max-width:1210px){
+    #people {
+        width: 100%;
+        margin: 0 auto;
+    
+        .inner {
+            max-width: 980px;
+            margin: 0 auto;
+    
+            .wrap {
+    
+                article {
+                    height: 590px;
+                   
+                    .icons {
+                        position: absolute;
+                        top: 14%;
+                        left: 17%;
+                       
+                    }
+                    .pic {
+                        width: 350px;
+                        height: 450px;
+                    }
+                
+                    .text {
+                        display: block;
+                        width: 100%;
+                        position: absolute;
+                        bottom: 0%;
+                        left: 30%;
+                    }
+                }
+    
+            }
+        }
+    }
+}
+@media screen and (max-width:1028px){
+    #people {
+        width: 100%;
+        margin: 0 auto;
+    
+        .inner {
+            max-width: 780px;
+            margin: 0 auto;
+    
+            .wrap {
+    
+                article {
+                    height: 520px;
+                   
+                    .icons {
+                        position: absolute;
+                        top: 12%;
+                        left: 15%;
+                       
+                    }
+                    .pic {
+                        width: 280px;
+                        height: 380px;
+                    }
+                
+                    .text {
+                        display: block;
+                        width: 100%;
+                        position: absolute;
+                        bottom: 0%;
+                        left: 30%;
+                    }
+                }
+    
+            }
+        }
+    }
+}
+
+
+
+/*mobile -------------------------------------------*/
+@media screen and (max-width:835px){
+    #people {
+        width: 100%;
+        margin: 0 auto;
+    
+        .inner {
+            max-width: 830px;
+            margin: 0 auto;
+    
+            .wrap {
+    
+                article {
+                    display: block;
+                    
+                   
+                    .icons {
+                        position: absolute;
+                        top: 12%;
+                        left: 15%;
+                       
+                    }
+                    .pic {
+                        width: 600px;
+                        height: 700px;
+                    }
+                
+                    .text {
+                        display: block;
+                        width: 100%;
+                        position: absolute;
+                        bottom: 0%;
+                        left: 30%;
+                    }
+                }
+    
+            }
+        }
+    }
+}
+

@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Fredericka+the+Great&family=Libre+Baskerville&family=Major+Mono+Display&family=Merriweather:wght@300&family=Montserrat:wght@700&family=Noto+Sans+KR:wght@100&family=Raleway:wght@100&family=Scheherazade+New:wght@700&family=Work+Sans:wght@100&display=swap');
+
+#visual {
+
+    p {
+        width: 65%;
+        font-size: 4em;
+        color: #e8e5e0;
+        text-align: center;
+        margin: 200px auto;
+        font-family: "Libre Baskerville";
+    }
+}
+.joinForm {
+    max-width: 1180px;
+    margin: 0 auto 50px;
+    
+
+    .inner {
+        width: 66%;
+        height: 100%;
+        margin: 0 auto;
+        padding: 25px 100px;
+
+        .int {
+            width: 100%;
+
+            h1 {
+                text-align: center;
+                color: #2d4349;
+                font-weight: 600;
+                font-size: 44px;
+                line-height: 1.6;
+                font-family: "Merriweather";
+                letter-spacing: 3px;
+                margin-bottom: 20px;
+            }
+            p {
+                font-size: 18px;
+                color: #343233;
+                letter-spacing: 1.4px;
+                font-family: "Baloo 2";
+                margin: 40px 0 55px;
+                text-align: center;
+            }
+        }
+        
+        
+
+        .wrap {
+            background: #e9e6e2;
+            padding: 50px;
+            width: 60%;
+            margin: 0 auto;
+
+            form {
+
+                label {
+                    font-size: 14px;
+                    font-weight: 900;
+                    color: #2e454b;
+                    font-family: "Baloo 2";
+                    margin-left: 1%;
+
+                    span {
+                        margin-left: 5px;
+                    }
+                }
+                .input {
+                        border-color:#fff ;
+                        color: #2e454b;
+                        padding: 12px;
+                        margin: 6px 0 4px;
+                        line-height: normal;
+                        box-sizing: border-box;
+                        border-radius: 2px;
+                        background-color: #fff;
+                        border: 1px solid #ccc;
+                        width: 100%;
+                        margin-left: 1%;
+                    }
+                
+                #name {
+                    border: none;
+                    margin-left: 1%;
+
+                    legend {
+                        font-size: 14px;
+                        font-weight: 900;
+                        color: #2e454b;
+                        font-family: "Baloo 2";
+                        
+
+                        span {
+                            margin-left: 5px;
+                        }
+                    }
+                
+                    .nameP1 {
+                        width: 48%;
+                        float: left;
+                        margin-bottom: 24px;
+
+                        input {
+                            margin-left: 0;
+                        }
+
+                        span {
+                            color: #2e454b;
+                            font-size: 13px;
+                            font-family: "Baloo 2";
+                        }
+                    }
+                    .nameP2 {
+                        width: 48%;
+                        float: right;
+                        margin-bottom: 24px;
+
+                        span {
+                            color: #2e454b;
+                            font-size: 13px;
+                            font-family: "Baloo 2";
+                            margin-left: 2%;
+                        }
+                    }
+                }
+                .phone {
+                    border: none;
+                    display: block;
+                    margin-top: 10px;
+
+                    .box3 {
+                        width: 4.2em;
+                        margin-left: 2%;
+                        float: left;
+                        margin-bottom: 24px;
+
+                        span {
+                            color: #2e454b;
+                            font-size: 13px;
+                            font-family: "Baloo 2";
+                            margin-left: 2%;
+                        }
+
+                        &:nth-of-type(1) {
+                            margin-left: 1%;
+                        }
+                        &:nth-of-type(3) {
+                            width: 4.8em;
+                        }
+                    }
+
+                }
+                .address {
+                    margin-bottom: 24px;
+
+                    p {
+                        font-size: 13px;
+                        display: block;
+                        font-family: "Baloo 2";
+                        color: #343233;
+                        opacity: 0.7;
+                        margin-left: 7px;
+                    }
+                    
+
+                }
+                #checkbox {
+                    margin: 24px auto 24px;
+                    border: none;
+
+                    legend {
+                        font-size: 14px;
+                        font-weight: 900;
+                        color: #2e454b;
+                        font-family: "Baloo 2";
+                        margin-left: 1%;
+
+                        span {
+                            margin-left: 5px;
+                        }
+                    }
+
+                    .option {
+                        margin: 6px 0 4px 1%;
+                        font-size: 13px;
+                        font-family: "Baloo 2";
+                        color: #555;
+
+                        .input {
+                            width: 13px;
+                            height: 13px;
+                            margin-right: 8px;
+                            vertical-align: middle;
+                        }
+                    }
+
+                    
+                }
+                .textArea {
+                    margin-bottom: 50px;
+
+                    input {
+                        min-height: 100px;
+                    }
+                }
+
+                .lastbtn {
+                    text-align: center;
+                    a {
+                        display: inline-block;
+                        padding: 14px 35px;
+                        background: #AFBBBB;
+                        color: #fff;
+                        font-size: 22px;
+                        font-family: "Baloo 2";
+                        letter-spacing: 1.5px;
+                        font-weight: 700;
+    
+                        &:nth-of-type(2) {
+                            margin-left: 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*tablet -------------------------------------------*/
+@media screen and (max-width:935px){
+    .joinForm {
+        .inner {
+            .wrap {
+                form {
+                    .lastbtn {
+                        a {
+                            display: block;
+                
+                            &:nth-of-type(2) {
+                                margin-left: 0px;
+                                margin-top: 8px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+
+/*mobile -------------------------------------------*/
+@media screen and (max-width:539px){
+    .joinForm {
+        margin: 0;
+
+        .inner {
+            width: 100%;
+            padding: 0;
+
+            .int {
+                padding:0 17px 0 17px;
+                width: 80%;
+                margin: 0 auto;
+            }
+            .wrap{
+                margin: 0 auto;
+                width: 80%;
+            }
+        }
+    }
+}

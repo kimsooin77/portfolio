@@ -1,0 +1,1144 @@
+@charset 'utf-8';
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Fredericka+the+Great&family=Libre+Baskerville&family=Montserrat:wght@700&family=Noto+Sans+KR:wght@100&family=Raleway:wght@100&family=Rubik&display=swap');
+
+@import 'department.scss';
+@import 'community.scss';
+@import 'join.scss';
+
+* {
+    margin: 0;
+    padding: 0;   
+    overflow-x: hidden;
+}
+ul,li,ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+/* header -----------------------------------------------------*/
+header {
+    width: 100%;
+    height: 800px;
+
+    .inner{
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+
+        .sideMenu {
+            position: absolute;
+            width: 30%;
+            height: 886px;
+            padding: 65px;
+            top: -133px;
+            left: 0;
+            box-sizing: border-box;
+            background: #b28157;
+
+            
+
+            #floorInfo {
+                top: 60%;
+                text-align: left;
+                position: absolute;
+                margin: 0;
+                padding: 0;
+
+                li {
+                    margin-bottom: 25px;
+
+                    a {
+                        font-size: 16px;
+                        letter-spacing: 1.3px;
+                        color: #FFFFFFB3;
+                        font-weight: 600;
+                        font-family: "Baloo 2";
+                    }
+                }
+            }
+        }
+
+        >h1 {
+            display: inline-block;
+            width: 400px;
+            height: 50px;
+            position: absolute;
+            left: 50%;
+            top: 40px;
+            padding: 45px;
+            overflow: hidden;
+            transform: translateX(-50%);
+
+            a img {
+                width: 100%;
+            }
+        }
+
+        #mainMenu {
+            display: inline-block;
+            margin: 0 auto;
+            text-align: left;
+            position: absolute;
+            top: 60px;
+            left: 5%;
+            box-sizing: border-box;
+            padding: 53px;
+
+            li {
+                float: left;
+                margin-right: 30px;
+                
+                a {
+                    font: 16px bold "Baloo 2";
+                    color: #2d4349;
+                    font-weight: 600;
+                }
+
+                &:last-child {
+                    a {
+                        color: #fab980;
+                    }
+                }
+
+            }
+        }
+
+        #icons {
+            position: absolute;
+            top: 60px;
+            right: 5%;
+            display: inline-block;
+            box-sizing: border-box;
+            padding: 45px;
+
+            li{
+                float: left;
+                margin-right: 30px;
+
+                input {
+                    padding: 5px;
+                }
+
+                a {
+                    font-family: "Baloo 2";
+                    font-size: 18px;
+                    color: #2d4349;
+                    font-weight: 600;
+                }
+
+                
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+
+            &:last-child{
+                padding-right: 0;
+            }
+            &::after {
+                display: inline-block;
+                content: "";
+                clear: both;
+            }
+
+        }
+
+    }
+}
+
+/* figure-------------------------------------------------- */
+figure {
+    background: url(/img/mainpage_Bg.jpg) no-repeat center/cover;
+    width: 80%;
+    height: 571px;
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    z-index: 3;
+
+    >p {
+        width: 65%;
+        font-size: 4em;
+        color: #e8e5e0;
+        text-align: center;
+        margin: 200px auto;
+        font-family: "Libre Baskerville";
+    }
+
+    .inner {
+        position: absolute;
+        bottom: 20%;
+        right: 10%;
+        width: 400px;
+
+        #view {
+            width: 100%;
+
+            li {
+                float: left;
+                width: 48%;
+
+                a {
+                    font-size: 17px;
+                    font-family: "Baloo 2"; 
+                    color: #e8e5e0;
+                    font-weight: 600;
+                    letter-spacing: 1.3px;
+
+                    &::after {
+                        margin-top: 5px;
+                        display: block;
+                        content: "";
+                        width: 150px;
+                        height: 3px;
+                        background-color: #b28157;
+                    }
+                }
+
+                &:nth-of-type(1),
+                &:nth-of-type(3) {
+                    margin-right: 3%;
+                    margin-bottom: 20px;
+                }
+                &:nth-of-type(2),
+                &:nth-of-type(4) {
+                    margin-right: 0;
+                }
+                &:nth-of-type(1) {
+                    a i {
+                        padding-left: 85px;
+                    }
+                }
+                &:nth-of-type(2) {
+                    a i {
+                        padding-left: 77px;
+                    }
+                }
+                &:nth-of-type(3) {
+                    a i {
+                        padding-left: 80px;
+                    }
+                }
+                &:nth-of-type(4) {
+                    a i {
+                        padding-left: 92px;
+                    }
+                }
+            }
+        }
+    }
+}
+/* floor ----------------------------------------------------*/
+#floor {
+    width: 100%;
+    height: 950px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+
+    .inner {
+        p {
+            font-size: 16px;
+            font-weight: 600;
+            font-family: "Baloo 2";
+        }
+        h1 {
+            font-size: 50px;
+            margin-top: 10px;
+            color: #2d4349;
+            font-weight: 500;
+            letter-spacing: -1.5px;
+            font-family: "Libre Baskerville";
+        }
+
+        article {
+            margin-top: 70px;
+            position: relative;
+
+            .pic {
+                img {
+                    width: 600px;
+                    height: 700px;
+                }
+
+                .text {
+                    position: absolute;
+                    top: 40%;
+                    left: 10%;
+                    text-align: left;
+                    overflow: hidden;
+
+                    h2 {
+                        font-size: 45px;
+                        font-family: "Baloo 2";
+                        font-weight: 300;
+                        margin-bottom: 20px;
+                    }
+                    p {
+                        font-size: 16px;
+                        line-height: 1.6;
+                        font-family: "Baloo 2";
+                        margin-bottom: 180px;
+                    }
+                    a {
+                        font-size: 17px;
+                        font-family: "Baloo 2"; 
+                        color: #b28157;
+                        font-weight: 600;
+                        letter-spacing: 1.3px;
+
+                        &::after {
+                            margin-top: 5px;
+                            display: block;
+                            content: "";
+                            width: 150px;
+                            height: 3px;
+                            background-color: #b28157;
+                        }
+
+                        i {
+                            padding-left: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* service------------------------------------------------------ */
+#service {
+    width: 100%;
+    margin: 0 auto;
+
+    .inner {
+        margin: 0 50px 0 50px;
+
+        .main_top {
+            margin-bottom: 50px;
+
+            h1 {
+                display: inline-block;
+                font-size: 50px;
+                font-weight: 300;
+                margin-right: 86px;
+                color: #222;
+            }
+            p {
+                display: inline-block;
+                font-size: 17px;
+                color: #888;
+                margin-top: -5px;
+                font-family: "Heebo";
+            }
+        }
+
+        .wrap {
+            z-index: 1;
+
+            .content{
+                display: inline-block;
+                width: 33%;
+                height: 409px;
+                padding: 40px 50px;
+                vertical-align: middle;
+                background: #fff;
+                border: 1px solid #ededed;
+                box-sizing: border-box;
+                overflow: hidden;
+
+                .pic img {
+                    width: 150px;
+                    height: 150px;
+                }
+
+                span {
+                    font-size: 22px;
+                    font-family: "Heebo";
+                    margin: 40px 0px 45px;
+                    color: #252525;
+                    text-align: left;
+                    line-height: 1.6;
+                    letter-spacing: -1.2px;
+                    box-sizing: border-box;
+                    display: block;
+                }
+                a {
+                    font-size: 17px;
+                    font-family: "Baloo 2"; 
+                    color: #b28157;
+                    font-weight: 600;
+                    letter-spacing: 1.3px;
+
+                    &::after {
+                        margin-top: 5px;
+                        display: block;
+                        content: "";
+                        width: 150px;
+                        height: 3px;
+                        background-color: #b28157;
+                    }
+
+                    i {
+                        padding-left: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+/* recommend----------------------------------------------------- */
+#recommend {
+    height: 800px;
+    margin: 180px 0 0 0;
+    position: relative;
+
+    .recommend_bg {
+        position: absolute;
+        width: 100%;
+        height: 1300px;
+        left: 0;
+        bottom: 0;
+        background: #ede7e1;
+        z-index: -1;
+    }
+    .inner {
+        margin: 20px 0 0 50px;
+        z-index: 4;
+
+    
+        h1 {
+            font-size: 50px;
+            color: #222;
+            font-weight: 300;
+            letter-spacing: -1.5px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            font-family: "Baloo 2";
+        }
+        .btns li {
+            display: inline-block;
+            vertical-align: top;
+            width: 200px;
+            height: 55px;
+            line-height: 55px;
+            text-align: center;
+            margin-right: 10px;
+            transition: all .5s ease;
+            border: 1px solid #9c9c9c;
+            font-size: 17px;
+            font-family: "Baloo 2";
+            font-weight: 500;
+            color: #1f2020;
+            cursor: pointer;
+            margin-bottom: 40px;
+        }
+        .wrap {
+            width: 150%;
+            overflow-x: hidden;
+            z-index: 5;
+
+            li {
+                float: left;
+                position: relative;
+                margin-right: 15px;
+
+                img {
+                    width: 380px;
+                    height: 360px;
+                }
+                div {
+                    position: relative;
+                    width: 100%;
+                    height: 120px;
+                    padding: 30px 35px;
+                    background: #fff;
+                    box-sizing: border-box;
+                    overflow: hidden;
+
+                    strong {
+                        text-align: left;
+                        font-family: "Baloo 2";
+                        font-size: 20px;
+                        color: #000;
+                        line-height: 1.6;
+                        letter-spacing: -0.5px;
+                    }
+                }
+
+                a {
+                    position: absolute;
+                    top: 10px;
+                    left: 15px;
+                    z-index: 10;
+                    color: #000;
+
+                    span {
+                        font-size: 16px;
+                        font-weight: 700;
+                        color: #000;
+                        margin-left: 10px;
+                    }
+                }
+                button {
+                    position: absolute;
+                    bottom: 15px;
+                    right: 15px;
+                    width: 48px;
+                    height: 48px;
+                    border-radius: 100%;
+                    background: #304b4b;
+                    z-index: 11;
+                    color: #f7f2ed;
+                    box-sizing: border-box;
+                    cursor: pointer;
+
+                    i {
+                        font-size: 21px;
+                        vertical-align: middle;
+                    }
+                }
+            }
+        }
+    }
+}
+/* search ---------------------------------------------------------*/
+#search {
+    width: 100%;
+    height: 443px;
+    padding: 100px 50px;
+    background: url(/img/subpage_bg.jpg)repeat-x center center;
+    background-size: cover;
+    box-sizing: border-box;
+    z-index: 100;
+    opacity: 0.8;
+    overflow: hidden;
+
+    .inner {
+        text-align: center;
+        width: 100%;
+
+        p {
+            font-family: "Baloo 2";
+            line-height: 1.6;
+            letter-spacing: -0.5px;
+            font-size: 18px;
+            font-weight: 600;
+            color: #333;
+        }
+        h1 {
+            font-size: 50px;
+            color: #111;
+            font-weight: 300;
+            letter-spacing: -1.5px;
+        }
+        span {
+            line-height: 1.6;
+            font-size: 17px;
+            margin-top: 10px;
+            margin-bottom: 40px;
+            display: block;
+            color: #000;
+        }
+        .wrap {
+            p {
+                display: inline-block;
+                vertical-align: middle;
+                width: 16%;
+                height: 79px;
+                margin-right: 0.5%;
+                background: #304b4b;
+                box-sizing: border-box;
+                cursor: pointer;
+                padding: 32px 15px;
+                font-size: 15px;
+                font-family: "Baloo 2";
+                font-weight: 300;
+                color: #fff;
+                line-height: 1;
+                overflow: hidden;
+            }
+            i {
+                margin-left: 100px;
+            }
+            button {
+                overflow: hidden;
+                display: inline-block;
+                vertical-align: middle;
+                width: 150px;
+                height: 78px;
+                font-size: 16px;
+                color: #fff;
+                font-weight: 700;
+                border: 1px solid #99a8a8;
+                background: #99a8a8;
+                cursor: pointer;
+                line-height: 78px;
+
+                img {
+                    margin: 3px 0 0 7px;
+                    max-width: 100%;
+                    border: none;
+                }
+            }
+
+        }
+    }
+}
+/* paper------------------------------------------------------ */
+#paper {
+    position: relative;
+    padding: 100px 0 0 ;
+    text-align: center;
+
+    .inner {
+        h1{
+            font-size: 50px;
+            color: #222;
+            font-weight: 200;
+            letter-spacing: -1.5px;
+            line-height: 1.6;
+            font-family: "Baloo 2";
+            margin-bottom: 18px;
+        }
+
+        >p {
+            font-size: 17px;
+            color: #888;
+            letter-spacing: -0.8px;
+            font-family: "Heebo";
+            line-height: 1.6;
+            margin-bottom: 40px;
+        }
+        .keyword {
+            margin-bottom: 50px;
+            display: flex;
+            justify-content: center;
+            padding-left: 10px;
+
+            >p {
+                display: inline-block;
+                vertical-align: middle;
+                font-size: 18px;
+                color: #818181;
+                margin-right: 20px;
+                line-height: 1.6;
+            }
+
+            ul {
+                display: inline-block;
+
+                li {
+                    display: inline-block;
+                    vertical-align: middle;
+                    border-radius: 18px;
+                    background: #f4f4f4;
+                    min-width: 115px;
+                    height: 37px;
+                    line-height: 37px;
+                    font-size: 15px;
+                    font-weight: 700;
+                    margin: 0 2px;
+                    box-sizing: border-box;
+                    cursor: pointer;
+                    overflow: hidden;
+
+                    &:last-child {
+                        background: #fff;
+                        border: 1px solid rgba(0,0,0,0.4);
+                        padding: 0 17px;
+                    }
+                }
+            }
+        }
+
+        .paerMenu {
+            width: 80%;
+            padding: 0 159px 0px;
+            margin: 0 auto;
+
+            li {
+                overflow: hidden;
+                position: relative;
+                display: inline-block;
+                width: 11%;
+                height: 57px;
+                margin-right: -1px;
+                background: #fff;
+                border: 1px solid #d5d5d5;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                box-sizing: border-box;
+                cursor: pointer;
+                transition: all 0.5s;
+
+                a {
+                    font-size: 17px;
+                    font-family: "Baloo 2";
+                    color: #1f2020;
+                    font-weight: 600;
+                    line-height: 57px;
+                    vertical-align: middle;
+                }
+            }
+
+        }
+
+        .photos {
+            width: 100%;
+            background: #ede7e1;
+            box-sizing: border-box;
+            padding: 50px 50px;
+            margin-top: -3px;
+
+            article {
+                position: relative;
+                width: 24%;
+                margin-right: 0.666%;
+                padding-bottom: 0;
+                margin-bottom: 60px;
+                display: inline-block;
+                vertical-align: top;
+
+                img {
+                    width: 100%;
+                    height: 270px;
+                }
+
+                .wrap {
+                    a {
+                        position: absolute;
+                        top: 20px;
+                        left: 25px;
+                        z-index: 10;
+                        font-size: 20px;
+                        font-weight: 700;
+                        color: #000;
+                        z-index: 11;
+
+                        strong {
+                            margin-left: 9px;
+                            font-size: 20px;
+                        }
+                    }
+
+                    button {
+                        overflow: hidden;
+                        position: absolute;
+                        bottom: 32%;
+                        right: 15px;
+                        width: 45px;
+                        height: 45px;
+                        border-radius: 100%;
+                        border:1px solid #304b4b;
+                        background: #304b4b;
+                        z-index: 11;
+                        color: #f7f2ed;
+                        box-sizing: border-box;
+                        cursor: pointer;
+                        outline: none;
+
+                        i {
+                            font-size: 21px;
+                            line-height: 45px;
+                        }
+                    }
+
+                    >p {
+                        padding: 20px 20px;
+                        text-align: left;
+                        font-size: 20px;
+                        color: #101825;
+                        background: #fff;
+                        font-weight: 500;
+                        letter-spacing: -1.8px;
+                        min-height: 55px;
+                        line-height: 1.6;
+                    }
+                }
+            }
+
+            .moreBtn {
+                position: relative;
+                display: block;
+                margin: 0 auto;
+                width: 310px;
+                height: 66px;
+                line-height: 62px;
+                font-size: 16px;
+                font-weight: 700;
+                font-family: "Baloo 2";
+                border: 2px solid #304b4b;
+                background: #304b4b;
+                color: #fff;
+                text-align: center;
+                transition: all 0.5s;
+                z-index: 10;
+                box-sizing: border-box;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+/* snsStrory------------------------------------------------- */
+#snsStrory {
+    padding: 100px 150px 150px;
+    position: relative;
+    text-align: center;
+
+    .inner {
+        p {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1.6;
+            letter-spacing: -0.5px;
+        }
+        h1 {
+            font-size: 50px;
+            color: #222;
+            font-weight: 300;
+            font-family: "Baloo 2";
+            letter-spacing: -1.5px;
+        }
+        ul {
+            margin-bottom: 45px;
+            color: #000;
+            line-height: 1.6;
+            letter-spacing: -0.5px;
+            box-sizing: border-box;
+            font-family: "Baloo 2";
+
+            li {
+                position: relative;
+                display: inline-block;
+                width: 220px;
+                padding: 10px;
+                text-align: center;
+                font-size: 16px;
+                color: #acacac;
+                font-weight: 700;
+                vertical-align: middle;
+                cursor: pointer;
+                transition: all 0.5s;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 90%;
+                    height: 3px;
+                    left: 0;
+                    bottom: 0;
+                    background: #1d1612;
+                    opacity: 0.1;
+
+                
+                }
+                &:hover {
+                    color: #222;
+                }
+            }
+        }
+    }
+}
+/* info---------------------------------------------------- */
+#info {
+    position: relative;
+    padding: 0 0 200px 70px;
+    overflow: hidden;
+
+    .inner {
+        p {
+            font-size: 15px;
+            margin-bottom: 10px;
+            font-weight: 600;
+            color: #000;
+            line-height: 1.6;
+            font-family: "Baloo 2";
+        }
+        h1{
+            font-size: 52px;
+            line-height: 1.2;
+            margin-bottom: 40px;
+            color: #222;
+            font-weight: 300;
+            letter-spacing: -1.5px;
+            font-family: 'Baloo 2';
+            overflow: hidden;
+        }
+        span {
+            display: block;
+            font-size: 17px;
+            color: #4e4e4e;
+            letter-spacing: -1px;
+            margin-bottom: 15px;
+            line-height: 1.6;
+            font-family: 'Noto Sans KR';
+        }
+        strong {
+            display: block;
+            color: #000;
+            margin-top: 15px;
+            font-family:'Heebo';
+            font-weight: bold;
+            line-height: 1.6;
+            letter-spacing: inherit;
+        }
+        
+    }
+    .pic{
+        background: url(/img/bell.jpg) no-repeat center/cover;
+        position: absolute;
+        top: 0;
+        right: 5%;
+        width: 934px;
+        height: 545px;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    .notice {
+        position: absolute;
+        width: 892px;
+        height: 303px;
+        display: block;
+        left: -109px;
+        bottom: -140px;
+        background: linear-gradient(to right, #555, transparent);
+        box-sizing: border-box;
+        margin-bottom: 100px;
+
+        span {
+            position: absolute;
+            font-size: 20px;
+            color: #acacac;
+            letter-spacing: -1px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            transition: all 0.5s;
+            color: #010101;
+            font-weight: 500;
+        }
+    }
+
+}
+
+/* footer--------------------------------------------------- */
+footer {
+    height: 650px;
+    padding: 50px 110px 25px;
+    overflow: hidden;
+    position: relative;
+    background: #e9e6e2;
+    color: #343233;
+
+    .inner {
+        height: 100%;
+        .footer_mainMenu {
+            float: left;
+
+            li {
+                display: inline-block;
+                margin-right: 20px;
+
+                a {
+                    font-size: 17px;
+                    color: #343233;
+                    font-family: 'Baloo 2';
+                }
+            }
+        }
+
+        .footer_subMenu {
+            float: right;
+
+            li {
+                display: inline-block;
+                margin-right: 20px;
+
+                a {
+                    color: #343233;
+                    font-family: 'Baloo 2';
+                }
+            }
+        }
+
+        .picAndRight {
+            width: 100%;
+            height: 60%;
+            position: relative;
+
+            .pic {
+                display: inline-block;
+                position: absolute;
+                top: 15%;
+                left: 80px;
+    
+                >img {
+                    width: 248px;
+                    height: 248px;
+                }
+            }
+
+            .footerRight {
+                width: 48%;
+                vertical-align: top;
+                display: inline-block;
+                position: absolute;
+                top: 15%;
+                right: 100px;
+
+    
+                p {
+                    margin-top: 20px;
+                    display: inline-block;
+                    width: 23%;
+                    vertical-align: top;
+                    font-size: 18px;
+                    color: #b28257;
+                    font-family: "Baloo 2";
+                    font-weight: 600;
+                }
+                span {
+                    display: inline-block;
+                    vertical-align: top;
+                    color: #343233;
+                    font-weight: 300;
+                    font-family: 'Noto Sans KR';
+                    line-height: 1.6;
+                    margin-top: 20px;
+                    font-size: 14px;
+                }
+                >a {
+                    display: block;
+                    font-size: 15px;
+                    color: #b28257;
+                    font-weight: 700;
+                    width: 230px;
+                    padding-bottom: 7px;
+                    border-bottom: 3px solid #b28257;
+                    background: url(/img/btn_hover.png)no-repeat right 8px;
+                    margin-top: 20px;
+                }
+
+                .last {
+                    margin-left: 150px;
+                }
+
+                
+            }
+        }
+        
+        .topBtns {
+            position: absolute;
+            overflow: hidden;
+            width: 51px;
+            height: 51px;
+            top: 130px;
+            right: 130px;
+            padding: 14px 0;
+            box-sizing: border-box;
+            border: 1px solid #e0e0e0;
+            text-align: center;
+            display: inline-block;
+            cursor: pointer;
+
+            >img {
+                opacity: 0.5;
+            }
+        }
+
+        
+        .footerLeft {
+            width: 100%;
+            display: flex;
+            padding-left: 40px;
+            position: absolute;
+            bottom: 15%;
+            left: 130px;
+            
+            .btns {
+                margin: 30px 0 45px;
+
+                div {
+                    display: inline-block;
+                    vertical-align: middle;
+                    background: #b28257 ;
+                    position: relative;
+                    width: 300px;
+                    height: 73px;
+                    line-height: 73px;
+                    padding: 30px 30px;
+                    box-sizing: border-box;
+                    cursor: pointer;
+                    overflow: hidden;
+
+                    p {
+                        overflow: hidden;
+                        font-size: 15px;
+                        color: #ece8e8;
+                        font-weight: 600;
+                        letter-spacing: 1px;
+                        line-height: 1;
+
+                        i{
+                            margin-left: 130px;
+                        }
+                    }
+                }
+                a {
+                    i {
+                        color: #b28257;
+                        font-size: 20px;
+                        margin-left: 30px;
+                    }
+                }
+
+            }
+
+            >a {
+                font-size: 17px;
+                font-family: "Baloo 2"; 
+                color: #b28157;
+                font-weight: 600;
+                padding: 45px 80px 45px;
+                letter-spacing: 1.3px;
+
+                i {
+                    padding-left: 90px;
+                }
+
+                &:nth-of-type(1):after {
+                    margin-top: 7px;
+                    display: block;
+                    content: "";
+                    width: 220px;
+                    height: 3px;
+                    background-color: #b28157;
+                }
+                &:nth-of-type(2):after {
+                    margin-top: 7px;
+                    display: block;
+                    content: "";
+                    width: 300px;
+                    height: 3px;
+                    background-color: #b28157;
+                }
+            }
+        }
+        .footerBottom {
+            position: absolute;
+            bottom: 2%;
+            right: 170px;
+            font-size: 15px;
+            color: #343233;
+            font-weight: 300;
+            letter-spacing: 1px;
+            font-family: "Noto Sans KR";
+            margin: 80px 0 50px 0;
+        }
+    }
+}
