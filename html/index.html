@@ -11,7 +11,15 @@
 <body>
     <!-- header -------------------------------------------------->
     <header id="header">
+        
         <div class="inner">
+            <div class="popup">
+                <span>[NOTICE]</span>
+                <p>I would love to hear from you!</p>
+                
+                <a href="#">X</a>
+            </div>
+
             <nav class="sideMenu">
 
                 <ul id="floorInfo">
@@ -25,14 +33,27 @@
 
 
             <ul id="mainMenu">
-                <li><a href="http://127.0.0.1:5500/html/index.html">SPACE</a></li>
+                <li><a href="http://127.0.0.1:5500/html/location.html">LOCATION</a></li>
                 <li><a href="http://127.0.0.1:5500/html/join.html">JOIN</a></li>
-                <li><a href="http://127.0.0.1:5500/html/community.html">COMMUNITY</a></li>
+                <li><a href="http://127.0.0.1:5500/html/community.html">FAQ</a></li>
                 <li><a href="http://127.0.0.1:5500/html/department.html">DEPARTMENT</a></li>
             </ul>
 
+            <a href="#" class="btnCall">
+                <span>메뉴호출</span>
+            </a>
+
+            <ul id="menuMore">
+                <li><a href="http://127.0.0.1:5500/html/location.html">LOCATION</a></li>
+                <li><a href="http://127.0.0.1:5500/html/join.html">JOIN</a></li>
+                <li><a href="http://127.0.0.1:5500/html/community.html">COMMUNITY</a></li>
+                <li><a href="http://127.0.0.1:5500/html/department.html">DEPARTMENT</a></li>
+                <li><a href="#">FLOOR INFO</a></li>
+                <li><input type="text" placeholder="SEARCH"></li>
+            </ul>
+
             <h1>
-                <a href="#"><img src="/img/logo.jpg" alt=""></a>
+                <a href="http://127.0.0.1:5500/html/index.html"><img src="/img/logo.jpg" alt=""></a>
             </h1>
 
             <ul id="icons">
@@ -48,7 +69,7 @@
     <figure id="visual">
         <div class="pic">
 
-            <p>Live at peace with bag</p>
+            <h2>Live at peace with bag</h2>
 
 
             <div class="inner">
@@ -77,11 +98,17 @@
             <h1>DooSung Floor guidance</h1>
             <article>
                 <div class="pic">
-                    <img src="/img/main_img.jpg" alt="">
+                    <img src="/img/location_bg.jpg" alt="">
                     <div class="text">
                         <h2>ARCHIVE</h2>
                         <p>본관 1층 아카이브에서는 두상종이로 만든 <br>커머셜 샘플들을 만나볼 수 있습니다.</p>
-                        <a href="#">VIEW MORE<i class= "fas fa-plus"></i></a>
+                        <a href="#" class="prev">
+                            <img src="/img/btnPrev.png" alt="">
+                        </a>
+                        <a href="#" class="next">
+                            <img src="/img/btnNext.png" alt="">
+                        </a>
+                        <a href="#" class="moreBtn">VIEW MORE<i class= "fas fa-plus"></i></a>
                 </div>
             </article>
         </div>
@@ -90,32 +117,38 @@
     <section id="service">
         <div class="inner">
             <div class="main_top">
-                <h1>주요 서비스 바로가기</h1>
-                <p>새로운 방식으로 더 많은 두성종이를 만나보세요!</p>
+                <h1>MAJOR SERVICE</h1>
+                <p>Lorem ipsum, dolor sit amet. Veritatis, nulla?</p>
             </div>
             
 
             <div class="wrap">
                 <article class="content">
-                    <div class="pic">
-                        <img src="/img/bag4.jpg" alt="">
+                    <div class="wrap2">
+                        <div class="pic">
+                            <img src="/img/bag4.jpg" alt="">
+                        </div>
+                        <span>Lorem ipsum dolor sit amet consectetur.</span>
+                        <a href="#">VIEW MORE<i class= "fas fa-plus"></i></a>
                     </div>
-                    <span>원하는 종이를 쉽고 빠르게 <br>확인하세요!</span>
-                    <a href="#">VIEW MORE<i class= "fas fa-plus"></i></a>
                 </article>
                 <article class="content">
-                    <div class="pic">
-                        <img src="/img/bag5.jpg" alt="">
+                    <div class="wrap2">
+                        <div class="pic">
+                            <img src="/img/bag5.jpg" alt="">
+                        </div>
+                        <span>Lorem ipsum dolor sit amet consectetur.</span>
+                        <a href="#">VIEW MORE<i class= "fas fa-plus"></i></a>
                     </div>
-                    <span>쇼룸방문, <br>종이상담이 필요하신가요?</span>
-                    <a href="#">VIEW MORE<i class= "fas fa-plus"></i></a>
                 </article>
                 <article class="content">
-                    <div class="pic">
-                        <img src="/img/bag6.jpg" alt="">
+                    <div class="wrap2">
+                        <div class="pic">
+                            <img src="/img/bag6.jpg" alt="">
+                        </div>
+                        <span>Lorem ipsum dolor sit amet consectetur.</span>
+                        <a href="#">VIEW MORE<i class= "fas fa-plus"></i></a>
                     </div>
-                    <span>두성종이의 공간을 프라이빗하게<br>대여해보세요!</span>
-                    <a href="#">VIEW MORE<i class= "fas fa-plus"></i></a>
                 </article>
             </div>
             
@@ -134,6 +167,13 @@
                 <li>RECOMMEND</li>
                 <li>ECO-FRIENDLY</li>
             </ul>
+
+            <a href="#" class="prev">
+                <img src="/img/btnPrev2.png" alt="">
+            </a>
+            <a href="#" class="next">
+                <img src="/img/btnNext2.png" alt="">
+            </a>
             
 
             <ul class="wrap">
@@ -170,7 +210,7 @@
     <section id="search">
         <div class="inner">
             <p>Smart Search</p>
-            <h1>스마트 검색</h1>
+            <h1>SMART SEARCH</h1>
             <span>필터의 분류/용도/평량 중 어느 하나의 조건만 넣어도 검색이 가능하도록 고안한 두성종이만의 종이 검색 방법입니다.</span>
             <div class="wrap">
                 <p>분류별<i class="fas fa-caret-down"></i></p>
@@ -211,7 +251,7 @@
                         <a href="#"><i class= "far fa-eye"></i><strong>1</stro></a>
                         <img src="/img/paperPic1.jpg" alt="">
                         <button><i class= "fas fa-heart"></i></button>
-                        <p>LP매트</p>
+                        <p>Oak & Linen</p>
                     </div>
                         
                 </article>
@@ -220,7 +260,7 @@
                         <a href="#"><i class= "far fa-eye"></i><strong>2</strong></a>
                         <img src="/img/paperPic2.jpg" alt="">
                         <button><i class= "fas fa-heart"></i></button>
-                        <p>펩틱트링가</p>
+                        <p>Botanica</p>
                     </div>
                         
                 </article>
@@ -229,7 +269,7 @@
                         <a href="#"><i class= "far fa-eye"></i><strong>3</strong></a>
                         <img src="/img/paperPic3.JPG" alt="">
                         <button><i class= "fas fa-heart"></i></button>
-                        <p>보존용지</p>
+                        <p>The Kinship Collection</p>
                     </div>
                         
                 </article>
@@ -238,7 +278,7 @@
                         <a href="#"><i class= "far fa-eye"></i><strong>4</strong></a>
                         <img src="/img/paperPic4.JPG" alt="">
                         <button><i class= "fas fa-heart"></i></button>
-                        <p>뱅가드</p>
+                        <p>Warm Shop</p>
                     </div>
                         
                 </article>
@@ -247,7 +287,7 @@
                         <a href="#"><i class= "far fa-eye"></i><strong>5</strong></a>
                         <img src="/img/paperPic5.JPG" alt="">
                         <button><i class= "fas fa-heart"></i></button>
-                        <p>우리한지 글씨한지</p>
+                        <p>Du Cafe</p>
                     </div>
                         
                 </article>
@@ -256,7 +296,7 @@
                         <a href="#"><i class= "far fa-eye"></i><strong>6</strong></a>
                         <img src="/img/paperPic6.JPG" alt="">
                         <button><i class= "fas fa-heart"></i></button>
-                        <p>우리한지 달</p>
+                        <p>Palette</p>
                     </div>
                         
                 </article>
@@ -265,7 +305,7 @@
                         <a href="#"><i class= "far fa-eye"></i><strong>7</strong></a>
                         <img src="/img/paperPic7.JPG" alt="">
                         <button><i class= "fas fa-heart"></i></button>
-                        <p>우리한지 대례지</p>
+                        <p>The Tuscan Tomato</p>
                     </div>
                         
                 </article>
@@ -274,7 +314,7 @@
                         <a href="#"><i class= "far fa-eye"></i><strong>8</strong></a>
                         <img src="/img/paperPic8.JPG" alt="">
                         <button><i class= "fas fa-heart"></i></button>
-                        <p>뱅가드</p>
+                        <p>Carriage</p>
                     </div>
                         
                 </article>
@@ -293,9 +333,16 @@
                 <li>@ doosungpaper_moongu</li>
             </ul>
 
-        <div class="sliderBox">
-            <img src="/img/sliderbag.png" alt="">
-        </div>
+        
+            <div class="sliderBox">
+                <div class="wrap">
+                    <img src="/img/snsPic1.jpg" alt="">
+                    <img src="/img/snsPic2.jpg" alt="">
+                    <img src="/img/snsPic3.jpg" alt="">
+                    <img src="/img/snsPic4.jpg" alt="">
+                    <img src="/img/snsPic5.jpg" alt="">
+                </div>
+            </div>
         </div>
     </section>
 <!-- info--------------------------------------------------- -->
@@ -311,9 +358,12 @@
         <div class="pic">
         </div>
         <div class="notice"> 
-            <span>공지사항</span>
-            <span>자료실</span>
-            <span>브랜드 소개</span>
+            <div class="noticeTxt">
+                <a>공지사항</a>
+                <a>자료실</a>
+                <a>브랜드 소개</a>
+            </div>
+            
         </div>
     </section>
 <!-- footer --------------------------------------------------->
@@ -345,7 +395,7 @@
         
                         <p>인더백 을지로</p>
                         <span>
-                            운영시간 : AM 10:00 - PM 17:00 대표번호 : 02-3144-3181팩스번호 : 02-588-2056
+                            운영시간 : AM 10:00 - PM 17:00 대표번호 : 02-3144-3181 <br>팩스번호 : 02-588-2056
                             <br>주소 : 04547 서울특별시 중구 을지로28길 15 2층
                         </span>
         
